@@ -1,38 +1,16 @@
-# FinDash - Personal Finance Visualizer 🚀
+# React + Vite
 
-FinDash is a dynamic, modern digital dashboard built specifically around the theme of visualizing data and presenting meaningful insights. The purpose of this application is to track your daily income and expenses while offering a beautifully animated dashboard that responds instantly to user interaction.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
+Currently, two official plugins are available:
 
-- **Live KPI Tracking**: The dashboard instantly computes your **Total Balance**, **Total Income**, and **Total Expenses** based on your transaction history.
-- **Dynamic DOM-Based Visual Summary**: Breaking away from heavyweight third-party charting libraries, this project dynamically generates and animates a bar chart breakdown of your spending purely via custom JavaScript DOM manipulation calculation.
-- **Transaction Logger**: A full CRUD system that allows you to add or delete transactions. It supports custom descriptions, numeric amounts, and categorization.
-- **Sidebar SPA Navigation**: Smooth fade-in and view-switching logic that mimics a framework router entirely written in Vanilla JS. 
-- **Offline Persistence & Failsafe**: Uses the browser's `localStorage` to save your data permanently, with a robust fallback system that triggers an in-memory database if `localStorage` access is blocked (e.g., when opening `file:///` URLs directly).
-- **Glassmorphic Aesthetic**: A premium dark-mode UI with sleek glowing accents, custom animations, and responsive flexbox/grid layouts.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🛠️ Technology Stack
+## React Compiler
 
-1. **HTML5**: Clean, highly semantic document structure.
-2. **CSS3**: Variables for theming, custom keyframe animations, pseudo-classes, and flexbox alignments.
-3. **Vanilla JavaScript**: Pure JS implementation featuring logic separation, DOM caching, state management algorithms, mathematical aggregations for charts, and event delegation.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-> *Note: This project deliberately avoids using libraries like React or Chart.js to strictly demonstrate competency in pure DOM manipulation and logic separation.*
+## Expanding the ESLint configuration
 
-## 🚀 How to Run
-
-Because this project is built entirely on native web standards, it does not require a backend or a Node.js node package manager (`npm`) installation.
-
-1. Clone or download this project folder.
-2. Double-click the `index.html` file to open it automatically in your default internet browser (such as Google Chrome, Firefox, or Microsoft Edge). 
-3. *Alternative*: Open the directory in VS Code and use the **Live Server** extension.
-
-## 📂 Project Structure
-
-```text
-📦 endtrem-P2
- ┣ 📜 index.html  # Main application structure
- ┣ 📜 style.css   # Stylesheets, visual theme, CSS variables
- ┣ 📜 script.js   # Controllers, DOM interactions, and state management
- ┗ 📜 README.md   # Documentation
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
